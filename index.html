@@ -1,12 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>github-issues-tracker</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="bg-gray-200 flex justify-center items-center h-screen">
+    <div class="bg-white w-96 p-8 rounded-lg shadow-md">
+      <div class="flex justify-center mb-4">
+        <img src="assets/github-logo.png" class="w-16 h-16" />
+      </div>
+
+      <h2 class="text-center text-xl font-semibold">GitHub Issues Tracker</h2>
+      <p class="text-center text-gray-500 text-sm mb-6">Sign in to manage your issues</p>
+
+      <label class="text-sm font-medium"> Username </label>
+      <input id="username"type="text" placeholder="Enter Username"class="w-full border p-2 rounded mt-1 mb-1"/>
+      <p class="text-blue-600 text-xs mb-3">Default: admin</p>
+
+      <label class="text-sm font-medium"> Password </label>
+      <input id="password" type="password"placeholder="Enter Password"class="w-full border p-2 rounded mt-1 mb-1"/>
+      <p class="text-blue-600 text-xs mb-4">Default: admin123</p>
+
+      <button onclick="login()" class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-2 rounded"> Sign In </button>
+
+      <div class="flex items-center my-5">
+        <div class="flex-grow border-t"></div>
+        <span class="mx-3 text-sm text-gray-500"> OR </span>
+        <div class="flex-grow border-t"></div>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded text-sm text-center">
+        <p>Demo Credentials:</p>
+        <p class="mt-2"><b>Username:</b> admin</p>
+        <p><b>Password:</b> admin123</p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
